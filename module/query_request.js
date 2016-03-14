@@ -37,6 +37,10 @@ function QueryRequest (application, options) {
     if ('version' in options) {
         self.version = options.version;
     }
+    
+    if('timezone' in options) {
+        self.timezone = options.timezone;
+    }
 
     QueryRequest.super_.apply(this, arguments);
 }
